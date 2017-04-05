@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/nome_cliente"
+        android:layout_width="140dp"
+        android:id="@+id/nome_cliente"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:id="@+id/importo"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/nome_cliente"
+        android:text="@string/gestione_importo" />
+
+    <TextView
+        android:layout_width="106dp"
+        android:id="@+id/nome_cliente_valore"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/nome_cliente"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.6"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="106dp"
+        android:id="@+id/importo_value"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/importo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.62"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/nome_cliente_valore" />
+
+    <TextView
+        android:text="@string/aggiungi_spesa"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:id="@+id/aggiungi_spesa"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/azzera"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:text="@string/aggiungi_mese"
+        android:layout_height="27dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="140dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/aggiungi_spesa"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/aggiungi_mese" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:id="@+id/elenco_mesi"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintTop_toBottomOf="@+id/importo"
+        android:text="@string/elenco_mesi"
+        android:elevation="1dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:text="@string/azzera"
+        android:layout_width="140dp"
+        android:layout_height="27dp"
+        android:id="@+id/azzera"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/elenco_mesi" />
+</android.support.constraint.ConstraintLayout>
